@@ -4,6 +4,11 @@
   "description": "resolve multiple react css transition",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/soyal/fs-css-transition"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
@@ -20,6 +25,7 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-runtime": "^6.26.0",
+    "classnames": "^2.2.6",
     "eslint": "^4.18.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-standard": "^11.0.0",

@@ -143,6 +143,13 @@ class FsCSSTransition extends Component {
 
     if (status === 'exited' && stage === 'done') return null
 
+    const { children } = this.props
+
+    // 如果children是function的情况
+    if(typeof children === 'function') {
+      return children(status, className)
+    }
+
     return <div className={className}>{this.props.children}</div>
   }
 }
