@@ -153,16 +153,12 @@ class FsCSSTransition extends Component {
     if (children.length > 1) {
       throw new Error('fs css transition need a root child')
     }
-    console.log(children)
-    return (
-      <div className={className}>
-        {React.cloneElement(children, {
-          className: children.props.className
-            ? children.props.className + ' ' + className
-            : className
-        })}
-      </div>
-    )
+
+    return React.cloneElement(children, {
+      className: children.props.className
+        ? children.props.className + ' ' + className
+        : className
+    })
   }
 }
 
