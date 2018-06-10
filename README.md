@@ -77,3 +77,47 @@ class InverseOfControl extends Component {
 export default InverseOfControl
 
 ```
+相应的样式为
+```css
+.ioc-box1 {
+  width: 100px;
+  height: 100px;
+  background: #59c;
+}
+.ioc-box1.ioc-enter {
+  opacity: 0;
+}
+.ioc-box1.ioc-enter-active {
+  opacity: 1;
+  transition: all 3s ease-in-out;
+}
+.ioc-box1.ioc-exit {
+  opacity: 1;
+}
+.ioc-box1.ioc-exit-active {
+  opacity: 0;
+  transition: all 3s ease-in-out;
+}
+
+.ioc-box2 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #98c;
+}
+.ioc-box2.ioc-enter {
+  left: 3000px;
+}
+.ioc-box2.ioc-enter-active {
+  left: 0;
+  transition: left 3s ease-in-out
+}
+.ioc-box2.ioc-exit {
+  left: 0;
+}
+.ioc-box2.ioc-exit-active {
+  left: 3000px;
+  transition: left 3s ease-in-out;
+}
+
+```
