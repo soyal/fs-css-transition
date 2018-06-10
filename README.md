@@ -37,7 +37,7 @@ export default BaseDemo
 classNames可以为string也可以为object,同CSSTransition一致
 
 ### 同时控制多个动画
-与CSSTransition不同的是，如果children为function，FsCSSTransition会将相应的类名回传回来
+与CSSTransition不同的是，如果children为function，FsCSSTransition会将相应的类名回传回来，我们可以通过这样的方式来同时控制多个css动画
 ```javascript
 import React, { Component } from 'react'
 import FsCSSTransition from '../../src/index'
