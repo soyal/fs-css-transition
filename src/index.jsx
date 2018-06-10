@@ -146,11 +146,23 @@ class FsCSSTransition extends Component {
     const { children } = this.props
 
     // 如果children是function的情况
-    if(typeof children === 'function') {
+    if (typeof children === 'function') {
       return children(status, className)
     }
 
-    return <div className={className}>{this.props.children}</div>
+    if (children.length > 1) {
+      throw new Error('fs css transition need a root child')
+    }
+    console.log(children)
+    return (
+      <div className={className}>
+        {React.cloneElement(children, {
+          className: children.props.className
+            ? children.props.className + ' ' + className
+            : className
+        })}
+      </div>
+    )
   }
 }
 
