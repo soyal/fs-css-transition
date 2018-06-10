@@ -1,12 +1,2 @@
-## 用于纯JS库打包的模板
-集成rollup + storybook
-
-## 打包命令
-```
-npm run build
-```
-
-## demo运行命令
-```
-npm run storybook
-```
+## fs-css-transition
+解决react-transition-group CSSTransition无法同时定制多个css动画的问题
