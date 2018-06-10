@@ -1,6 +1,6 @@
 {
   "name": "fs-css-transition",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "resolve multiple react css transition",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -9,7 +9,8 @@
     "url": "https://github.com/soyal/fs-css-transition"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -132,6 +132,10 @@ class FsCSSTransition extends Component {
     }
   }
 
+  componentWillUnmount() {
+    window.clearTimeout(this.doneTimer)
+  }
+
   componentDidMount() {
     if (this.props.in) {
       this.statusTransition('show')

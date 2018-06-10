@@ -121,3 +121,9 @@ export default InverseOfControl
 }
 
 ```
+
+### Props
+* in: boolean, 用于控制是否显示 
+* timeout: number, 用于估算动画完成时间
+* children: function or ReactNode, 为function，回传动画状态(exited, exiting, entered, entering)和当前的类名 (state: string, className: string): void
+* classNames: object or string, 为string，会依次添加`*-enter`,`*-enter-active`,`*-enter-done`,`*-exit`, `*-exit-active`, `*-exit-done`，为object则意味着自己定制相关状态的类名,e.g `{ enter: 'cls-enter', enterActive: 'cls-enter-active', enterDone: 'cls-enter-done', exit: 'cls-exit', exitActive: 'cls-exit-active', exitDone: 'cls-exit-done' }`
