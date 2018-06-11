@@ -1,6 +1,6 @@
 {
   "name": "fs-css-transition",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "resolve multiple react css transition",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -43,7 +43,7 @@
     "rollup": "^0.60.1",
     "rollup-plugin-babel": "^3.0.4"
   },
-  "dependencies": {
+  "peerDependencies": {
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
